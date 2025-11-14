@@ -18,7 +18,7 @@ function Notes() {
   // Fetch notes
   const fetchNotes = async () => {
     try {
-      const response = await axios.get("https://notes-backend-54a2.onrender.com/api/getNotes");
+      const response = await axios.get("https://notes-backend-54a2.onrender.com/api/getNote");
       setNotes(response.data.data); // array of notes
     } catch (error) {
       console.log("Fetch error:", error);
