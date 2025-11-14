@@ -1,0 +1,113 @@
+/* Container for the whole app */
+.todo-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #a98581;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields and textarea */
+input[type="text"],
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* Button styling */
+#add-task-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #34414e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+  background-color: #2e71c7;
+}
+
+/* Notes list styles */
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Each task item */
+.task-item {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Titles in each note */
+.task-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+/* Task message paragraph */
+.task-item p {
+  margin: 0 0 8px 0;
+  color: #555;
+}
+
+/* Category label styling */
+.task-item small {
+  font-style: italic;
+  color: #999;
+}
+
+/* Action buttons container */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit and delete buttons */
+.actions button {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button */
+.actions button:first-child {
+  background-color: #4caf50;
+}
+
+.actions button:first-child:hover {
+  background-color: #3a9c40;
+}
+
+/* Delete button */
+.actions button:last-child {
+  background-color: #e74c3c;
+}
+
+.actions button:last-child:hover {
+  background-color: #c0392b;
+}
