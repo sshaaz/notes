@@ -10,7 +10,7 @@ const createNotes = async (req, res) => {
             res.status(404).json({ message: "message or title shouldn't be empty" })
         }
         const saveData = await notesModel.create({
-            tilte: body.tilte,
+            title: body.title,
             message: body.message,
             category: body.category
         })
