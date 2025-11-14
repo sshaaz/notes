@@ -5,7 +5,7 @@ import {
 
 import axios from 'axios';
 
-function Notes() {
+function Notess() {
   const [notes, setNotes] = useState([]);
   const [formData, setFormData] = useState({
     title: "",
@@ -168,4 +168,4 @@ function Notes() {
   );
 }
 
-export default Notes;
+export default Notess;
