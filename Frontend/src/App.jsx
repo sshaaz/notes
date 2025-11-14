@@ -1,5 +1,5 @@
 import React from 'react'
-import Notes from '../components/notes'
+import Notes from './Compponents/notes'
 
 const App = () => {
   return (
