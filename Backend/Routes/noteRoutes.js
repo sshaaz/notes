@@ -5,9 +5,9 @@ const { createNotes, getAllNotes, updateNotes, deleteNotes } = require('../contr
 const noteRoutes = express.Router()
 
 noteRoutes.post('/createNote',createNotes)
-noteRoutes.post('/getNote',getAllNotes)
-noteRoutes.post('/updateNote/:id',updateNotes)
-noteRoutes.post('/deleteNote/id',deleteNotes)
+noteRoutes.get('/getNote',getAllNotes)
+noteRoutes.put('/updateNote/:id',updateNotes)
+noteRoutes.delete('/deleteNote/id',deleteNotes)
 
 module.exports = noteRoutes
 
