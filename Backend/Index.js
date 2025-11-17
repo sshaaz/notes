@@ -8,13 +8,16 @@ const app = express()
 const PORT =process.env.PORT || 5000;
 
 
-app.use(express.json())
-
 app.use(cors({
-    origin: ["http://localhost:5173", "https://notes-frtend.onrender.com"],
+    origin: [
+        "http://localhost:5173",
+        "https://notes-frtend.onrender.com"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
+app.use(express.json())
+
 
 
 RunServer()
